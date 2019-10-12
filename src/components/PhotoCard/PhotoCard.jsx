@@ -74,18 +74,16 @@ const PhotoCard = ({ image }) => {
 };
 
 PhotoCard.propTypes = {
-  image: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      webformatURL: PropTypes.string.isRequired,
-      largeImageURL: PropTypes.string.isRequired,
-      likes: PropTypes.number.isRequired,
-      views: PropTypes.number.isRequired,
-      comments: PropTypes.number.isRequired,
-      downloads: PropTypes.number.isRequired,
-      tags: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
+  image: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    webformatURL: PropTypes.string.isRequired,
+    largeImageURL: PropTypes.string.isRequired,
+    likes: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    comments: PropTypes.number.isRequired,
+    downloads: PropTypes.number.isRequired,
+    tags: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default PhotoCard;
